@@ -84,3 +84,94 @@ P.S. Функции вызывать не обязательно*/
 'use strict';
 
 // Код возьмите из предыдущего домашнего задания
+
+// function first(){
+
+//     setTimeout(function(){
+//         console.log(1);
+//     },500);
+// }
+
+// function second(){
+//     console.log(2);
+// }
+
+// first();
+// second();
+
+// function learnJS(lang, callback){
+//     console.log(`Я учу: ${lang}`);
+//     callback();
+// }
+
+// learnJS("JavaScript", function(){
+//     console.log("Я прошел этот урок");
+// });
+////////////////////////////////////////////////////////////////////////////
+
+// const options = {
+//     name: 'test',
+//     widht: 1024, 
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     },
+//     makeTest: function(){
+//         console.log("Test");
+//     }
+// };
+
+// console.log(options);
+
+// delete options.name;
+
+// console.log(options);
+// let counter =0;
+
+// for(let key in options){
+//     if(typeof(options[key]) === 'object'){
+//         for(let keyObj in options[key]){
+//             console.log(`Свойство ${keyObj} имеет значения ${options[key][keyObj]}`);
+//         }
+//     }else{
+//         console.log(`Свойство ${key} имеет значения ${options[key]}`);
+//     }
+//     counter++;
+// }
+
+// console.log(counter);
+
+// console.log(Object.keys(options).length);
+// options.makeTest();
+
+// const {border, gb} = options.colors;
+// console.log(border); 
+
+const arr = [5,2,34,4,7,6];
+arr.sort(compareNum);
+console.log(arr);
+
+function compareNum(a,b){
+    return a-b;
+}
+// arr.forEach(function(item, i, arr){
+//     console.log(`${i}: ${item} внутри массива ${arr}`);
+// });
+
+// const str = prompt("","");
+// const product = str.split(", "); 
+// product.sort();
+// console.log(product.join("; "));
+// // arr.pop();//Удаление последного элекмента массива
+// arr.push(10);
+// console.log(arr);
+
+// for(let i=0 ; i<arr.length; i++){
+//     console.log(arr[i]);
+// }
+
+// for(let value of arr){
+//     console.log(value);
+// }
+

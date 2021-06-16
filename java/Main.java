@@ -1,12 +1,9 @@
 class Main {
     public static void main(String args []) {
-        long m = System.currentTimeMillis();
+ 
 
-        int num = 50;
-        while(num<1000000){
-            System.out.println(num++);
+        for(int i =0 ; i<10; i++){
+            System.out.println(String.format("eewrwr %s", i));
         }
-        System.out.println("Finish!");
-        System.out.println((double) (System.currentTimeMillis() - m)/1000);
     }
 }
